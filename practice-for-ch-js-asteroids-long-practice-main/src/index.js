@@ -14,3 +14,6 @@ const canvasEle = document.getElementById("game-canvas")
 const ctx = canvasEle.getContext("2d")
 
 moving.draw(ctx)
+ctx.clearRect(0,0,1000,600)
+moving.move()
+moving.draw(ctx)

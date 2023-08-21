@@ -15,6 +15,13 @@ class MovingObject {
         ctx.stroke();
         ctx.fill()
     }
+
+    move() {
+        const x = this.pos[0] + this.vel[0];
+        const y = this.pos[1] + this.vel[1];
+
+        this.pos = [x,y];
+    }
 }
 
 export default MovingObject;
